@@ -3,6 +3,7 @@ import './App.css';
 import './style.css'
 import FlurOutfittersSmallWeb from './assets/img/FlurOutfittersSmallWeb.png'
 
+
 function App() {
   return (
     <div>
@@ -19,13 +20,16 @@ function App() {
           <a href="index.html"><img src={FlurOutfittersSmallWeb} alt="FLURStore" width="125px" /></a>
         </div>
         <nav>
+          
           <ul id="MenuItems">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="product.html">Products</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Contact</a></li>
-            <li><a href="account.html">Account</a></li>
+            <li><a class="hvr-outline-out" href="index.html">Home</a></li>
+            <li><a class="hvr-outline-out"href="product.html">Products</a></li>
+           <li><a class="hvr-outline-out"href="/">About</a></li>
+            <li><a class="hvr-outline-out"href="/">Contact</a></li>
+            <li><a class="hvr-outline-out"href="account.html">Account</a></li>
+
           </ul>
+         
         </nav>
         <a href="cart.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" /></a>
         <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
@@ -124,7 +128,7 @@ function App() {
         <p>$500.00</p>
       </div>
     </div>
-    <h2 class="title">Latest Products</h2>
+    <h2 id="latest" class="title">Latest Products</h2>
     <div class="row">
       <div class="col-4">
         <a href="product_details.html"><img src="https://i.ibb.co/bQ5t8bR/product-5.jpg" alt="" /></a>
